@@ -45,12 +45,13 @@ class Solution
     
   public void printNos(int N)
     {
-        print(1,N);
+        print(N);
     }
-    private void print(int i ,int n) {
-        if(i > n) return;
-        System.out.printf("%d ", i);
-        print(i + 1,n);
+    private void print(int N) {
+        if(N > 0) {
+            print(N-1);
+            System.out.printf("%d ", N);
+        }
     }
 }
 
